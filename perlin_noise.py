@@ -102,10 +102,11 @@ def map_generator(size,a,b,pts_x,pts_y):
         print("cool ass method",y_tab[j])
     plt.figure()
     heatmap, ax = plt.subplots()
-    im = ax.imshow(value_mat,cmap='inferno',interpolation='nearest',origin='lower',aspect='auto')
+    im = ax.imshow(value_mat,cmap='plasma',interpolation='nearest',origin='lower',aspect='auto')
     ax.set(xlabel='x', ylabel='y')
     cbar = heatmap.colorbar(im)
     cbar.ax.set_ylabel('Perlin noise')
+    plt.savefig("hola.png",bbox_inches="tight")
     """for j in range(len(y_tab)):
         for i in range(len(x_tab)):
            value_mat[i,j]=perlin_mapping_stupid(size,step_x,step_y,x_tab[i],y_tab[j],Points,my_dict,x_points,y_points,Grad_vects)
@@ -123,4 +124,4 @@ def map_generator(size,a,b,pts_x,pts_y):
     
 if __name__=="__main__": 
     "size of the domain , a,b number of lines in the grid (for x and y axis) , pts x and pts y the number of points for each axis"
-    map_generator(size=10,a=10,b=10,pts_x=100,pts_y=100)
+    map_generator(size=10,a=100,b=100,pts_x=100,pts_y=100)
