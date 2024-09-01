@@ -18,6 +18,6 @@ def threeD_map(size,a,b,pts_x,pts_y):
     
 if __name__=="__main__": 
     "size of the domain , a,b number of lines in the grid (for x and y axis) , pts x and pts y the number of points for each axis"
-    threeD_map(size=100,a=20,b=20,pts_x=10,pts_y=10)
+    threeD_map(size=10,a=10,b=10,pts_x=100,pts_y=100)
     
 

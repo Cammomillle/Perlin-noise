@@ -107,6 +107,7 @@ def map_generator(size,a,b,pts_x,pts_y):
     cbar = heatmap.colorbar(im)
     cbar.ax.set_ylabel('Perlin noise')
     plt.savefig("hola.png",bbox_inches="tight")
+    plt.show()
     """for j in range(len(y_tab)):
         for i in range(len(x_tab)):
            value_mat[i,j]=perlin_mapping_stupid(size,step_x,step_y,x_tab[i],y_tab[j],Points,my_dict,x_points,y_points,Grad_vects)
